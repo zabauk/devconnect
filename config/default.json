@@ -1,3 +1,3 @@
 {
-    "mongoURI":"mongodb+srv://dbuser:nYXNDDJwp2ttZUWj@cluster0.a62fd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI":"mongodb://dbuser:nYXNDDJwp2ttZUWj@cluster0-shard-00-00.a62fd.mongodb.net:27017,cluster0-shard-00-01.a62fd.mongodb.net:27017,cluster0-shard-00-02.a62fd.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-ik2yo4-shard-0&authSource=admin&retryWrites=true&w=majority"
 }

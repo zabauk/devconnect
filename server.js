@@ -2,6 +2,12 @@ const express=require('express');
 const connectDB= require('./config/db');
 
 const app=express();
+
+//initialize middleware
+app.use(express.json({
+    extended:false,
+}));
+
 //default end point
 app.get('/', (req, res)=>res.send('API Server is running'));
 
