@@ -3,6 +3,8 @@ const {body, validationResult}=require('express-validator');
 const User=require('../../models/User');
 const gravitar=require('gravatar');
 const bcrypt=require('bcryptjs');
+const jwt=require('jsonwebtoken');
+const config=require('config');
 const router=express.Router();
 
 //get method
@@ -47,7 +49,16 @@ router.post(
         await user.save();
 
         //generate token
-        res.send('Registered user successfully');
+        const payload={
+            user:{
+                id:user.id,
+            }
+        };
+
+        jwt.sign(payload, config.get('secretToken'), {expiresIn:36000}, (err, token)=>{
+            if(err) throw err;
+            res.json({token});
+        })
 
         }catch(err){
             console.log(err.message);

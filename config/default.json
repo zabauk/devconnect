@@ -1,3 +1,4 @@
 {
-    "mongoURI":"mongodb://dbuser:nYXNDDJwp2ttZUWj@cluster0-shard-00-00.a62fd.mongodb.net:27017,cluster0-shard-00-01.a62fd.mongodb.net:27017,cluster0-shard-00-02.a62fd.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-ik2yo4-shard-0&authSource=admin&retryWrites=true&w=majority"
+    "mongoURI":"mongodb://dbuser:nYXNDDJwp2ttZUWj@cluster0-shard-00-00.a62fd.mongodb.net:27017,cluster0-shard-00-01.a62fd.mongodb.net:27017,cluster0-shard-00-02.a62fd.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-ik2yo4-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "secretToken":"5c3a833055a3013d4c95c032a52dcbcfecf22e6cfab27f2421c85bbdf37992f89708a292f569c92497de65144b2cae431daa55089c3b7f0d24eca0ff09764882"
 }
